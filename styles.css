@@ -107,12 +107,32 @@ button {
 
 .left {
   float: left;
-  width: 40%;
 }
 
 .right {
   float: right;
+}
+
+/* widths */
+
+.w-60 {
   width: 60%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-100 {
+  width: 100%;
+}
+
+.w-70 {
+  width: 70%;
 }
 
 h3 {
