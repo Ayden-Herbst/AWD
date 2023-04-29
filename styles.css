@@ -22,8 +22,6 @@ body {
 
 /* nav */
 
-
-
 /* section 1 */
 
 .header_cont {
@@ -139,7 +137,7 @@ h3 {
   font-family: "Satoshi";
   color: #ffffff;
   font-size: 5rem;
-  padding: 20px 20px;
+  padding: 20px 50px;
   line-height: 5rem;
 }
 
@@ -272,6 +270,18 @@ p {
     #feef63 40.91%,
     #58f9b5 58.53%,
     #c153e7 81.41%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.e_vibrant {
+  background: rgb(255, 0, 122);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 0, 122, 1) 20%,
+    rgba(74, 234, 245, 1) 100%
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
