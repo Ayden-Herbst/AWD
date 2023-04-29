@@ -288,6 +288,20 @@ p {
   background-clip: text;
 }
 
+.e_fire {
+  background: linear-gradient(180deg, #5200ff 10%, #e72a00 81.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.e_cream {
+  background: linear-gradient(180deg, #fec9e9 0%, #ffa113 81.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 @media only screen and (max-width: 400px) {
   html {
     font-size: 35%;
