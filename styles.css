@@ -54,9 +54,9 @@ h2 {
   font-style: normal;
   font-weight: normal;
   font-size: 3rem;
-  line-height: 102%;
-  /* or 73px */
-
+  line-height: 3.5rem;
+  color: #ffffff;
+  font-weight: normal;
   text-align: center;
 }
 
@@ -82,7 +82,7 @@ button {
 .btn1 {
   position: relative;
   background-image: linear-gradient(94deg, #3300ff 6.8%, #feef63 91.21%);
-  z-index: 1;
+  z-index: -1;
   border-radius: 40px;
   margin-top: 0px;
   padding: 15px 50px;
@@ -107,13 +107,13 @@ button {
     #c153e7 81.41%
   );
 
-  z-index: -1;
+  z-index: -2;
   transition: all 0.4s linear;
   opacity: 0;
   border-radius: 40px;
-  box-shadow: 0px 14px 36px 4px rgba(241, 245, 53, 0.69);
-  -webkit-box-shadow: 0px 14px 36px 4px rgba(241, 245, 53, 0.69);
-  -moz-box-shadow: 0px 14px 36px 4px rgba(241, 245, 53, 0.69);
+  box-shadow: 0px 14px 36px 4px #fff7f7DF;
+  -webkit-box-shadow: 0px 14px 36px 4px #fff7f7DF;
+  -moz-box-shadow: 0px 14px 36px 4px #fff7f7DF;
   color: #000;
 }
 .btn1:hover::before {
@@ -362,7 +362,7 @@ p {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff7f714;
+    background-color: #fff7f7DF;
     backdrop-filter: blur(4px);
     width: 100vw;
   }

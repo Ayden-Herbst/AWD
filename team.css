@@ -52,9 +52,73 @@ h5 {
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .quote.arne {
   text-align: right;
+}
+
+.team_cont.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 766px) {
+  html {
+    font-size: 30%;
+  }
+  .member {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .team_cont {
+    display: none;
+  }
+
+  .team_cont.mobile {
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 150px;
+  }
+
+  h5 {
+    font-size: 9rem;
+    line-height: 8rem;
+    text-align: center;
+    width: 100vw;
+    z-index: -1;
+    position: relative;
+    top: 200px;
+  }
+
+  .role {
+    width: 100vw;
+    margin-top: 50px;
+  }
+
+  .img {
+    width: 100vw;
+  }
+
+  img {
+    width: 100vw;
+    opacity: 0.9;
+  }
+
+  .role.brian {
+    margin-bottom: 100px;
+  }
+
+  h2 {
+    line-height: 4rem;
+  }
+
+  .logo > img {
+    float: right;
+    width: 50px;
+    display: block;
+  }
 }
