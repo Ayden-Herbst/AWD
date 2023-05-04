@@ -111,9 +111,9 @@ button {
   transition: all 0.4s linear;
   opacity: 0;
   border-radius: 40px;
-  box-shadow: 0px 14px 36px 4px #fff7f7DF;
-  -webkit-box-shadow: 0px 14px 36px 4px #fff7f7DF;
-  -moz-box-shadow: 0px 14px 36px 4px #fff7f7DF;
+  box-shadow: 0px 14px 36px 4px #fff7f7df;
+  -webkit-box-shadow: 0px 14px 36px 4px #fff7f7df;
+  -moz-box-shadow: 0px 14px 36px 4px #fff7f7df;
   color: #000;
 }
 .btn1:hover::before {
@@ -340,7 +340,134 @@ p {
   background-clip: text;
 }
 
-@media only screen and (max-width: 400px) {
+.pricing {
+  display: grid;
+  grid-template: 1fr / repeat(3, 1fr);
+  grid-gap: 80px;
+  color: #000;
+}
+
+.plan_title {
+  width: 100%;
+  margin: 0px;
+  padding: 20px 0px;
+
+  box-shadow: 0px 20px 6px rgba(0, 0, 0, 0.25);
+}
+
+.plan1 > .plan_header {
+  background: #f6bb48;
+  border-radius: 22px 22px 0px 0px;
+}
+
+.plan2 > .plan_header {
+  background: #ff5c28;
+  border-radius: 22px 22px 0px 0px;
+}
+
+.plan3 > .plan_header {
+  background: #1ca0ff;
+  border-radius: 22px 22px 0px 0px;
+}
+
+.planh1 {
+  font-size: 5rem;
+  font-weight: 600;
+  width: 100%;
+  color: #000;
+  text-align: center;
+}
+
+.plan1,
+.plan2,
+.plan3 {
+  background-color: #232323;
+  border-radius: 22px;
+  text-align: center;
+  height: 100%;
+  width: 25vw;
+}
+
+.plan_items {
+  padding: 20px 0px;
+}
+
+.plan3 {
+  position: relative;
+  bottom: 50px;
+  z-index: -1;
+}
+
+.plan_item {
+  font-size: 2.5rem;
+  border-bottom: #ffffff5c;
+  border-bottom-style: solid;
+  border-width: 1px;
+  padding: 15px 20px;
+  margin: 0;
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #da22ff 0%,
+    #9733ee 51%,
+    #da22ff 100%
+  );
+  padding: 15px 0px;
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #222222;
+  border-radius: 500px;
+  display: block;
+  margin-inline: 40px;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  font-family: "Satoshi";
+  font-size: 3rem;
+}
+
+.btn-grad:hover {
+  background-position: top right; /* change the direction of the change here */
+  color: #fff;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 720px) {
+  .pricing {
+    display: grid;
+    grid-template: repeat(3, 1fr) / 1fr;
+    grid-gap: 40px;
+    color: #000;
+  }
+
+  .plan3 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+  }
+
+  .plan1,
+  .plan2,
+  .plan3 {
+    background-color: #232323;
+    border-radius: 22px;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .plan_item {
+    font-size: 4rem;
+  }
+
+  .planh1 {
+    font-size: 8rem;
+  }
+
   html {
     font-size: 35%;
   }
@@ -362,7 +489,7 @@ p {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #fff7f7DF;
+    background-color: #fff7f7df;
     backdrop-filter: blur(4px);
     width: 100vw;
   }
